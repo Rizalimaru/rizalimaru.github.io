@@ -292,34 +292,35 @@
             Balasan biasanya dalam 1–2 hari kerja.
           </p>
           <div class="contact-info">
-            <div><span>Email:</span> &nbsp; ferifadhli5@contoh.com</div>
+            <div><span>Email:</span> &nbsp; ferifadhli5@gmail.com.com</div>
             <div><span>WhatsApp:</span> &nbsp; +62 895-3597-32833</div>
             <div><span>Lokasi:</span> &nbsp; Indonesia</div>
           </div>
         </div>
 
         <!-- Form dummy (tidak benar-benar kirim, hanya tampilan) -->
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Form ini hanya contoh tampilan. Untuk mengaktifkan, hubungkan dengan backend atau layanan form.');">
+        <form action="https://formspree.io/f/mvglpgqa" method="POST" class="contact-form">
           <div class="form-row">
             <div>
               <label for="name">Nama</label>
-              <input id="name" type="text" placeholder="Nama lengkap" required />
+              <input id="name" name="name" type="text" placeholder="Nama lengkap" required />
             </div>
             <div>
               <label for="email">Email</label>
-              <input id="email" type="email" placeholder="ferifadhli5@gmail.com" required />
+              <input id="email" name="email" type="email" placeholder="contoh@email.com" required />
             </div>
           </div>
 
           <div>
             <label for="message">Pesan</label>
-            <textarea id="message" placeholder="Tulis pesan atau kebutuhan project kamu..."></textarea>
+            <textarea id="message" name="message" placeholder="Tulis pesan..."></textarea>
           </div>
 
           <button type="submit" class="btn-primary" style="justify-content:center; width:max-content;">
             Kirim Pesan
           </button>
         </form>
+
       </div>
     </section>
   </main>
